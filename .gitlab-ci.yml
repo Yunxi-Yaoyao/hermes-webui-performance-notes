@@ -3,7 +3,6 @@ python-tests:
   stage: test
   image:
     name: python:3.12
-    pull_policy: if-not-present
   script:
     - python -m unittest discover -s tests -p 'test_*.py' -v
     - python scripts/check_publication.py
@@ -11,6 +10,5 @@ javascript-tests:
   stage: test
   image:
     name: node:22
-    pull_policy: if-not-present
   script:
     - node tests/test_singleflight.cjs patches/singleflight.js
