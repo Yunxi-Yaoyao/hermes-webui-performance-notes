@@ -1,0 +1,16 @@
+__pycache__/
+*.pyc
+.venv/
+.env
+.env.*
+*storage-state*
+*auth-state*
+*.har
+*.pcap
+*.pcapng
+*.db
+*.sqlite*
+*.log
+backup/
+backups/
+node_modules/

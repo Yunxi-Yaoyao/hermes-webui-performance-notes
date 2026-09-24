@@ -1,0 +1,164 @@
+{
+  "notice": "Anonymized aggregate snapshots, not a statistically controlled benchmark. Different readiness probes across versions.",
+  "samples": [
+    {
+      "stage": "baseline-0.7.22",
+      "origin": "local",
+      "cache": "cold",
+      "ready_seconds": 10.925,
+      "encoded_body_bytes": 9605863,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "baseline-0.7.22",
+      "origin": "local",
+      "cache": "warm",
+      "ready_seconds": 3.568,
+      "encoded_body_bytes": 7314649,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "baseline-0.7.22",
+      "origin": "public",
+      "cache": "cold",
+      "ready_seconds": 14.939,
+      "encoded_body_bytes": 9605863,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "baseline-0.7.22",
+      "origin": "public",
+      "cache": "warm",
+      "ready_seconds": 6.801,
+      "encoded_body_bytes": 7314649,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "optimized-0.7.22",
+      "origin": "local",
+      "cache": "cold",
+      "ready_seconds": 2.093,
+      "encoded_body_bytes": 3308406,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "optimized-0.7.22",
+      "origin": "local",
+      "cache": "warm",
+      "ready_seconds": 1.253,
+      "encoded_body_bytes": 1409086,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "optimized-0.7.22",
+      "origin": "public",
+      "cache": "cold",
+      "ready_seconds": 5.767,
+      "encoded_body_bytes": 3308406,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "optimized-0.7.22",
+      "origin": "public",
+      "cache": "warm",
+      "ready_seconds": 2.139,
+      "encoded_body_bytes": 1409086,
+      "sample_count": 1,
+      "measurement": "explicit-background-decode-and-markdown"
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "upgrade-check",
+      "origin": "local",
+      "cache": "cold",
+      "ready_seconds": 4.582,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "upgrade-check",
+      "origin": "local",
+      "cache": "warm",
+      "ready_seconds": 1.89,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "upgrade-check",
+      "origin": "public",
+      "cache": "cold",
+      "ready_seconds": 5.55,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "upgrade-check",
+      "origin": "public",
+      "cache": "warm",
+      "ready_seconds": 2.713,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "independent-recheck",
+      "origin": "local",
+      "cache": "cold",
+      "ready_seconds": 2.715,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "independent-recheck",
+      "origin": "local",
+      "cache": "warm",
+      "ready_seconds": 1.826,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "independent-recheck",
+      "origin": "public",
+      "cache": "cold",
+      "ready_seconds": 5.217,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    },
+    {
+      "stage": "0.7.24-with-network-guard-only",
+      "round": "independent-recheck",
+      "origin": "public",
+      "cache": "warm",
+      "ready_seconds": 2.548,
+      "sample_count": 1,
+      "measurement": "UI-and-background-style-present-no-explicit-decode",
+      "js_errors": 0
+    }
+  ],
+  "retained_outlier": {
+    "stage": "0.7.22-preload",
+    "origin": "public",
+    "cache": "warm",
+    "ready_seconds": 6.91,
+    "symptom": "Small API TTFB and WebSocket handshake delayed together; no exact hop attribution."
+  }
+}

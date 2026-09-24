@@ -1,0 +1,14 @@
+stages: [test]
+python-tests:
+  stage: test
+  image: python:3.12-slim
+  before_script:
+    - apt-get update && apt-get install -y --no-install-recommends git
+  script:
+    - python -m unittest discover -s tests -p 'test_*.py' -v
+    - python scripts/check_publication.py
+javascript-tests:
+  stage: test
+  image: node:24-slim
+  script:
+    - node tests/test_singleflight.cjs patches/singleflight.js
